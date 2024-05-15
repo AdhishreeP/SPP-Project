@@ -1,5 +1,5 @@
 # File: app.py
-from flask import Flask
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ app.config['MAX_CONTENT_LENGTH'] = 32 * 1024 * 1024
 # home page 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('landing.html')
 
 
 if __name__ == '__main__':

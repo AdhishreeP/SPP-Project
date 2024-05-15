@@ -114,12 +114,68 @@
 }
 
 @media (max-width: 575.98px) {
+  /* Center align navbar brand */
   .navbar-brand {
     margin: auto;
     text-align: center;
   }
+  /* Center align buttons */
   .button {
     display: block;
     margin: 10px auto;
   }
+
+  /* Adjust column widths and spacing for footer */
+  .footer-column {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.background {
+  background-color: red;
+}
+
+.link-no-underline {
+  text-decoration: none; /* Remove underlines */
+  color: black; /* Set text color to grey */
+}
+
+/* Add padding between columns */
+.col-md:not(:last-child) {
+  padding-right: 15px;
+}
+
+/* Ensure subline content comes in one single line
+.list-unstyled li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+singleLine{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.social-links a.facebook-hover:hover i {
+  color: #1877f2; /* Facebook blue color */
+  transform: scale(1.6);
+}
+
+.social-links a.twitter-hover:hover i {
+  color: #1da1f2; /* Twitter blue color */
+  transform: scale(1.6);
+}
+
+.social-links a.instagram-hover:hover i {
+  color: #e4405f; /* Instagram pink color */
+  transform: scale(1.6);
+}
+
+.social-links a.linkedin-hover:hover i {
+  color: #0077b5; /* LinkedIn blue color */
+  transform: scale(1.6);
 }
